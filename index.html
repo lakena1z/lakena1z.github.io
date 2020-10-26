@@ -22,7 +22,7 @@
         document.addEventListener("keydown",keyPush);
         setInterval(game,1000/15);
     }
-    px=py=30;
+    px=py=10;
     gs=tc=20;
     ax=ay=15;
     xv=yv=0;
@@ -48,9 +48,9 @@
         ctx.fillStyle = "black";
         ctx.fillRect(0,0,canv.width,canv.height);
 
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "lime";
         for(var i=0;i<trail.length;i++){
-            ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-0,gs-0);
+            ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-3,gs-3);
             if(trail[i].x==px && trail[i].y==py){
                 tail = 3;
             }
@@ -65,8 +65,8 @@
                 ay = Math.floor(Math.random()*tc);
             }
 
-        ctx.fillStyle = "white";
-        ctx.fillRect(ax*gs,ay*gs,gs-0,gs-0);
+        ctx.fillStyle = "red";
+        ctx.fillRect(ax*gs,ay*gs,gs-3,gs-3);
         
 
     }
