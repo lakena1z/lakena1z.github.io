@@ -10,7 +10,7 @@
 
         <h1>Use arrows to move</h1>
 
-        <canvas id = "gc" class="gms" width="800" height="800"></canvas>
+        <canvas id = "gc" class="gms" width="800" height="600"></canvas>
         <table border="2" bordercolor="(68, 68, 68)" class="gms" width="804" height="804">
             <tr></tr>
         </table>
@@ -33,7 +33,7 @@
         py+=yv;
 
         if(px < 0){
-            px = tc-1;
+            px = tc+10;
         }
         if(px > tc-1){
             px = 0;
