@@ -10,8 +10,8 @@
 
         <h1>Use arrows to move</h1>
 
-        <canvas id = "gc" class="gms" width="800" height="600"></canvas>
-        <table border="2" bordercolor="(68, 68, 68)" class="gms" width="804" height="804">
+        <canvas id = "gc" class="gms" width="400" height="400"></canvas>
+        <table border="2" bordercolor="(68, 68, 68)" class="gms" width="404" height="404">
             <tr></tr>
         </table>
     
@@ -25,7 +25,7 @@
     px=py=10;
     gs=tc=20;
     ax=ay=15;
-    xv=yv=0;
+    xv=yv=1;
     trail = [];
     tail = 3;
     function game(){
@@ -33,7 +33,7 @@
         py+=yv;
 
         if(px < 0){
-            px = tc+10;
+            px = tc-1;
         }
         if(px > tc-1){
             px = 0;
