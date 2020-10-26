@@ -50,7 +50,7 @@
 
         ctx.fillStyle = "lime";
         for(var i=0;i<trail.length;i++){
-            ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-0,gs-0);
+            ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-3,gs-3);
             if(trail[i].x==px && trail[i].y==py){
                 tail = 3;
             }
@@ -66,7 +66,7 @@
             }
 
         ctx.fillStyle = "red";
-        ctx.fillRect(ax*gs,ay*gs,gs-0,gs-0);
+        ctx.fillRect(ax*gs,ay*gs,gs-3,gs-3);
         
 
     }
