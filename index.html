@@ -20,7 +20,7 @@
         canv = document.getElementById("gc");
         ctx = canv.getContext("2d");
         document.addEventListener("keydown",keyPush);
-        setInterval(game,1000/150);
+        setInterval(game,1000/1);
     }
     px=py=10;
     gs=tc=20;
@@ -52,7 +52,7 @@
         for(var i=0;i<trail.length;i++){
             ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-3,gs-3);
             if(trail[i].x==px && trail[i].y==py){
-                tail++;
+                tail = 3;
             }
         }
         trail.push({x:px,y:py});
