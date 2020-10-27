@@ -27,7 +27,7 @@
     ax=ay=15;
     xv=yv=1;
     trail = [];
-    tail = 60;
+    tail = 3;
     function game(){
         px+=xv;
         py+=yv;
@@ -52,7 +52,7 @@
         for(var i=0;i<trail.length;i++){
             ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-3,gs-3);
             if(trail[i].x==px && trail[i].y==py){
-                tail = 60;
+                tail++;
             }
         }
         trail.push({x:px,y:py});
